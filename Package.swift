@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.7.1" 
+            exact: "1.9.0"
         ),
         .package(
             url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -43,8 +43,8 @@ let package = Package(
             ),
             .binaryTarget(
                 name: "BlueSeaAdmobAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.7.1/2026090900/adapter-V1.7.1.0/BlueSeaAdmobAdapter.xcframework.zip",
-                checksum: "4e77cfec0c6b7706b4d94ec7cfe67cdffa1f2ad99a27c9a8debddbaa8ac97aba"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaAdmobAdapter.xcframework.zip",
+                checksum: "ba4543c195a387ee2f09c224ac9c791bf3e0fc5a5b20d2bdbeac97eea67321e8"
             ),
         ]
 )
