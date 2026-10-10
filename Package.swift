@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -18,11 +18,11 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.9.0"
+            exact: "1.9.1"
         ),
         .package(
             url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-            from: "13.7.0"
+            from: "13.0.0"
         ),
     ],
     targets: [
@@ -34,17 +34,12 @@ let package = Package(
                     .product(name: "BlueSeaSDK", package: "BlueSeaSDK-Swift-Package"),
                     .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
                 ],
-                path: "Sources",
-                linkerSettings: [
-                    // NOTE: Swift Package Manager currently does not allow dependencies with unsafeFlags, unless a specific branch/commit is used.
-                    // For now, these flags should be added manually to the project for integration.
-                    .unsafeFlags(["-ObjC"])
-                ]
+                path: "Sources"
             ),
             .binaryTarget(
                 name: "BlueSeaAdmobAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaAdmobAdapter.xcframework.zip",
-                checksum: "ba4543c195a387ee2f09c224ac9c791bf3e0fc5a5b20d2bdbeac97eea67321e8"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.1/2026101000/adapter-V1.9.1.0/BlueSeaAdmobAdapter.xcframework.zip",
+                checksum: "d09030167a107778447aad2717c2126e21d2bc6c611cc73bed0f503135a7ee65"
             ),
         ]
 )
